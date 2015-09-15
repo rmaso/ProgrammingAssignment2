@@ -5,6 +5,9 @@
 ##                  create an object to cache the inverse of a matrix and a function to return the inverse of the matrix,
 ##                  if the inverse has already been calculated (and the matrix has not changed), then the cachesolve 
 ##                  should retrieve the inverse from the cache, in other case, the compute the inverse and cache it.
+## Examples:
+##                  x <- makeCacheMatrix(matrix(runif(1000^2),1000))  # create a random 1000x1000 matrix
+##                  cacheSolve(x) # return the inverse of x
 
 ## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 ## This object contains the following functions:
